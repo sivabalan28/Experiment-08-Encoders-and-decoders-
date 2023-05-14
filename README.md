@@ -74,10 +74,10 @@ Program for Endocers and Decoders  and verify its truth table in quartus using V
 Developed by: SIVABALAN S
 RegisterNumber:  212222240100
 */
-```
 
-## ENCONDER:
-```
+
+ENCONDER:
+
 module encoder(a,b,c,d0,d1,d2,d3,d4,d5,d6,d7);
 output a,b,c;
 input d0,d1,d2,d3,d4,d5,d6,d7;
@@ -85,10 +85,10 @@ or(a,d4,d5,d6,d7);
 or(b,d2,d3,d6,d7);
 or(c,d1,d3,d5,d7);
 endmodule
-```
 
-## DENCODER:
-```
+
+DENCODER:
+
 module EX7(d0,d1,d2,d3,d4,d5,d6,d7,a,b,c);
 input a,b,c;
 output d0,d1,d2,d3,d4,d5,d6,d7;
@@ -106,28 +106,33 @@ endmodule
 
 ### RTL LOGIC  
 
-## ENCODER:
+## ENCODER
 
 ![ENCODER;](https://github.com/sivabalan28/Experiment-08-Encoders-and-decoders-/assets/113497347/8dab3a5c-17b8-445d-b87d-cc6558415497)
 
-## DECODER:
+## DECODER
 
-![Uploading DECODER.png…]()
-
-
-
+![DECODER](https://github.com/sivabalan28/Experiment-08-Encoders-and-decoders-/assets/113497347/7385ea5a-d53c-4878-a35a-77baad87e6a5)
 
 ### TIMING DIGRAMS  
 
+## ENCODER
 
+![TIMEN](https://github.com/sivabalan28/Experiment-08-Encoders-and-decoders-/assets/113497347/1f1255a0-1cd4-4702-aa34-fb2a272439f5)
 
+## DECODER
 
+![TIMDE](https://github.com/sivabalan28/Experiment-08-Encoders-and-decoders-/assets/113497347/1d047032-cbec-4ba1-97e9-bc2f9dc6bf1a)
 
 ### TRUTH TABLE 
 
+## ENCODER
 
+![ENTRTU](https://github.com/sivabalan28/Experiment-08-Encoders-and-decoders-/assets/113497347/1ed95b29-2b7e-4fad-ba74-3bc85ac3cb85)
 
+## DECODER
 
-
+![TRUDEC](https://github.com/sivabalan28/Experiment-08-Encoders-and-decoders-/assets/113497347/0aaee8e2-5d6f-4f9d-b4c2-b7fc6f99b128)
 
 ### RESULTS 
+

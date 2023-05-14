@@ -135,4 +135,4 @@ endmodule
 ![TRUDEC](https://github.com/sivabalan28/Experiment-08-Encoders-and-decoders-/assets/113497347/0aaee8e2-5d6f-4f9d-b4c2-b7fc6f99b128)
 
 ### RESULTS 
-
+Thus, 8 to 3 Encoder and 3 to 8 Decoder is implemented using verilog and its outputs is validated.

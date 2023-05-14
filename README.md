@@ -75,34 +75,35 @@ Developed by: SIVABALAN S
 RegisterNumber:  212222240100
 */
 
-
 ENCONDER:
 
-module encoder(a,b,c,d0,d1,d2,d3,d4,d5,d6,d7);
-output a,b,c;
+module encoder(d0,d1,d2,d3,d4,d5,d6,d7,x,y,z);
 input d0,d1,d2,d3,d4,d5,d6,d7;
-or(a,d4,d5,d6,d7);
-or(b,d2,d3,d6,d7);
-or(c,d1,d3,d5,d7);
+output x,y,z;
+or(x,d4,d5,d6,d7);
+or(y,d2,d3,d6,d7);
+or(z,d1,d3,d5,d7);
 endmodule
-
 
 DENCODER:
 
-module EX7(d0,d1,d2,d3,d4,d5,d6,d7,a,b,c);
-input a,b,c;
+module decoder(x,y,z,d0,d1,d2,d3,d4,d5,d6,d7);
+input x,y,z;
 output d0,d1,d2,d3,d4,d5,d6,d7;
-assign d0 = (~a&~b&~c);
-assign d1 = (~a&~b&c);
-assign d2 = (~a&b&~c);
-assign d3 = (~a&b&c);
-assign d4 = (a&~b&~c);
-assign d5 = (a&~b&c);
-assign d6 = (a&b&~c);
-assign d7 = (a&b&c);
+wire xbar,ybar,zbar;
+not(xbar,x);
+not(ybar,y);
+not(zbar,z);
+and(d0,xbar,ybar,zbar);
+and(d1,xbar,ybar,z);
+and(d2,xbar,y,zbar);
+and(d3,xbar,y,z);
+and(d4,x,ybar,z);
+and(d5,x,ybar,z);
+and(d6,x,y,zbar);
+and(d7,x,y,z);
 endmodule
 ```
-
 
 ### RTL LOGIC  
 
